@@ -1,0 +1,8 @@
+- hosts: all 
+  gather_facts: no 
+  vars:
+    base_dir: base
+  tasks:
+    - file: path=/tmp/dir/{{ base_dir }}/{{inventory_hostname}} state=directory
+
+    
